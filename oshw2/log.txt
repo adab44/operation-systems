@@ -1,0 +1,23 @@
+[1746899592026] Initial Stock : [ product 0: 5, product 1: 5, product 2: 5]
+[1746899592027] Customer 1 tried to add product 0 ( qty : 2) to cart | Stock : [ product 0: 3, product 1: 5, product 2: 5] // succeed
+[1746899592027] Customer 1 attempted to purchase product 0 ( qty : 2 ) | Stock : [ product 0: 2, product 1: 4, product 2: 5]
+[1746899592028] Customer 2 tried to add product 0 ( qty : 1) to cart | Stock : [ product 0: 2, product 1: 4, product 2: 5] // succeed
+[1746899592028] Customer 2 attempted to purchase product 0 ( qty : 1 ) | Stock : [ product 0: 2, product 1: 4, product 2: 5]
+[1746899592028] Customer 1 tried to add product 1 ( qty : 1) to cart | Stock : [ product 0: 2, product 1: 4, product 2: 5] // succeed
+[1746899592028] Customer 1 attempted to purchase product 1 ( qty : 1 ) | Stock : [ product 0: 2, product 1: 4, product 2: 5]
+[1746899592028] Customer 1 couldn 't purchase product 1 ( qty : 1 ) and had to wait ! ( maximum number of concurrent payments reached !)
+[1746899592131] Customer 1 ( automatically ) retried purchasing product 1 ( qty : 1 ) | Stock : [ product 0: 2, product 1: 4, product 2: 5] //( checked for available cashier slot before timeout expired .)
+[1746899592132] Customer 1 couldn 't purchase product 1 ( qty : 1 ) and had to wait ! ( maximum number of concurrent payments reached !)
+[1746899592132] Customer 1 could not purchase product 1 ( qty : 1 ) in time . Timeout is expired !!! Product 1 ( qty : 1 ) returned to the stock ! | Stock : [ product 0: 2, product 1: 5, product 2: 5]
+[1746899592132] Customer 1 retry attempt failed - product already reserved ( or purchased ) by another customer | Stock : [ product 0: 2, product 1: 5, product 2: 5] // no more retry for this thread
+[1746899593033] Customer 1 purchased product 0 ( qty : 2 ) | Stock : [ product 0: 2, product 1: 5, product 2: 5]
+[1746899593034] Customer 2 purchased product 0 ( qty : 1 ) | Stock : [ product 0: 2, product 1: 5, product 2: 5]
+[1746899593034] Customer 3 tried to add product 0 ( qty : 3) but only 2 units were available | Stock : [ product 0: 2, product 1: 5, product 2: 5]
+Product 0 is currently reserved. Try again in 10000 milliseconds.
+product 0: 2, product 1: 5, product 2: 5] // failed
+[1746899593035] Customer 4 tried to add product 0 ( qty : 1) to cart | Stock : [ product 0: 1, product 1: 5, product 2: 5] // succeed
+[1746899593035] Customer 4 attempted to purchase product 0 ( qty : 1 ) | Stock : [ product 0: 1, product 1: 5, product 2: 5]
+[1746899594039] Customer 4 purchased product 0 ( qty : 1 ) | Stock : [ product 0: 1, product 1: 5, product 2: 5]
+[1746899594039] Customer 5 tried to add product 2 ( qty : 2) to cart | Stock : [ product 0: 1, product 1: 5, product 2: 3] // succeed
+[1746899594040] Customer 5 attempted to purchase product 2 ( qty : 2 ) | Stock : [ product 0: 1, product 1: 5, product 2: 3]
+[1746899595045] Customer 5 purchased product 2 ( qty : 2 ) | Stock : [ product 0: 1, product 1: 5, product 2: 3]

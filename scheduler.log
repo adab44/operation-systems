@@ -1,0 +1,18 @@
+[2025-03-26 17:02:10] [INFO] Forking new process for jobA
+[2025-03-26 17:02:10] [INFO] Executing jobA (PID: 2208) using exec
+[2025-03-26 17:02:13] [INFO] jobA ran for 3 seconds. Time slice expired – Sending SIGSTOP
+[2025-03-26 17:02:13] [INFO] Forking new process for jobB
+[2025-03-26 17:02:13] [INFO] Executing jobB (PID: 2209) using exec
+[2025-03-26 17:02:16] [INFO] jobB ran for 3 seconds. Time slice expired – Sending SIGSTOP
+[2025-03-26 17:02:16] [INFO] Resuming jobA (PID: 2208) – SIGCONT
+[2025-03-26 17:02:19] [INFO] jobA completed execution. Terminating (PID: 2208)
+[2025-03-26 17:02:19] [INFO] Forking new process for jobC
+[2025-03-26 17:02:19] [INFO] Executing jobC (PID: 2210) using exec
+[2025-03-26 17:02:22] [INFO] jobC ran for 3 seconds. Time slice expired – Sending SIGSTOP
+[2025-03-26 17:02:22] [INFO] Resuming jobB (PID: 2209) – SIGCONT
+[2025-03-26 17:02:25] [INFO] jobB ran for 3 seconds. Time slice expired – Sending SIGSTOP
+[2025-03-26 17:02:25] [INFO] Resuming jobC (PID: 2210) – SIGCONT
+[2025-03-26 17:02:26] [INFO] jobC completed execution. Terminating (PID: 2210)
+[2025-03-26 17:02:26] [INFO] Resuming jobB (PID: 2209) – SIGCONT
+[2025-03-26 17:02:29] [INFO] jobB completed execution. Terminating (PID: 2209)
+[2025-03-26 17:02:29] [INFO] Finished scheduler exiting.
